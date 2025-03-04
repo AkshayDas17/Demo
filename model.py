@@ -2,7 +2,7 @@
 # importing dependencies
 import joblib
 import streamlit as st
-from PIL import Image
+
 
 # load model
 Model=joblib.load('Model')
@@ -14,10 +14,6 @@ st.subheader('''Coronary heart disease is a leading cause of heart attacks and c
 st.subheader('Ckeck your chance of having heart disease')
 st.subheader('')
 
-#inserting image
-img=Image.open('Heart.jpg')
-st.image(img,width=500)
-st.subheader('')
 
 # name 
 name=st.text_input('Enter name')
